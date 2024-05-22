@@ -99,4 +99,17 @@ const object4 = {
   
 console.log(Object.getOwnPropertyNames(object4));
 // Expected output: Array ["a", "b", "c"]
+
+const object5= ["a", "b", "c", "d"];
+console.log(Object.getOwnPropertyNames(object5));
+
+//Object.getPrototypeOf()
+//The Object.getPrototypeOf() static method returns the prototype (i.e. the value of the internal [[Prototype]] property) of the specified object.
+const prototype1 = {};
+const object6 = Object.create(prototype1);
+
+console.log(Object.getPrototypeOf(object6) === prototype1);
+// Expected output: true
+
+
   
